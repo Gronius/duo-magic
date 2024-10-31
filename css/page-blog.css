@@ -5,9 +5,9 @@
   margin: 0;
   padding: 0;
 }
-* {
-  /* outline: 1px solid #d10823; */
-}
+/* * {
+  outline: 1px solid #d10823;
+} */
 html {
   scroll-behavior: smooth;
 }
@@ -71,8 +71,8 @@ body {
   margin: 0 20px 11px 0;
   border-radius: 8px;
 }
-.page-blog__description img {
-}
+/* .page-blog__description img {
+} */
 @media (max-width: 576px) {
   .page-blog__item {
     margin-left: 25px;
