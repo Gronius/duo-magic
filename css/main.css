@@ -549,13 +549,13 @@ body {
     }
 }
 
-@media (max-width: 1050px) {
+/* @media (max-width: 1050px) {
     .item {
-        /* max-width: 230px;
+        max-width: 230px;
     width: 100%;
-    height: 82px; */
+    height: 82px;
     }
-}
+} */
 
 @media (max-width: 998px) {
     .logo-img {
@@ -1401,9 +1401,9 @@ body {
     cursor: pointer;
 }
 
-.photo {
-    /* max-width: 30%; */
-}
+/* .photo {
+    max-width: 30%;
+} */
 
 .detail__photo {
     max-width: 25%;
@@ -1576,7 +1576,7 @@ body {
     border-radius: 8px;
 }
 
-.page-master__description img {}
+
 
 /* =====Video===== */
 .section-video {
@@ -1769,3 +1769,252 @@ body {
         margin-right: 10px;
     }
 }
+
+/* ---Modal--- */
+
+.modal__overlay {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  transition: 0.1s ease;
+}
+.modal__container {
+  background-color: #fff;
+  padding: 16px;
+  width: 700px;
+  /* width: 100%; */
+  border-radius: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+   font-family: 'Montserrat Alternates';
+  font-size: 20px;
+  box-sizing: border-box;
+}
+.modal__close {
+  background: none;
+  border: none;
+}
+.modal__content {
+  margin-top: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.splide__pagination {
+  display: none;
+}
+.splide__slide {
+  /* height: 500px; */
+  transition: 0.1s ease;
+}
+.splide__slide img {
+  /* height: 100%; */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.1s ease;
+}
+@keyframes mmfadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes mmfadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+@keyframes mmslideIn {
+  from {
+    transform: translateY(15%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes mmslideOut {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10%);
+  }
+}
+.micromodal-slide {
+  display: none;
+}
+.splide__arrow {
+  background: none;
+}
+.splide__arrow svg {
+  fill: #fff;
+  width: 50px;
+  height: 50px;
+}
+.micromodal-slide.is-open {
+  display: block;
+}
+.micromodal-slide[aria-hidden='false'] .modal__overlay {
+  animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+.micromodal-slide[aria-hidden='false'] .modal__container {
+  animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+.micromodal-slide[aria-hidden='true'] .modal__overlay {
+  animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+.micromodal-slide[aria-hidden='true'] .modal__container {
+  animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform;
+}
+
+/* ---Modalwin--- */
+
+/* Modal bubbleshow  */
+/* .mod-wind img {
+  transition: 0.3s ease;
+} */
+/* .mod-wind img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 0.3s ease;
+} */
+.button-tatu {
+  margin-top: -38px;
+  margin-left: 160px;
+  padding: 6px 20px;
+}
+.modwind {
+  position: fixed;
+  margin: 0 auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0, 7;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+.modall__box {
+  /* position: relative; */
+  max-width: 560px;
+  height: 500px;
+  padding: 16px;
+  z-index: 1;
+  background-color: #ffffff;
+  transform: scale(0);
+  transition: transform 0.4s;
+  border-radius: 4px;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(8, 34, 90) rgba(223, 232, 245, 0.836);
+  box-sizing: border-box;
+}
+.mod-title {
+  font-family: 'Montserrat Alternates';
+  color: #050505;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  text-align: center;
+  width: 96%;
+}
+.mod-descript {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: #000419;
+  padding-bottom: 8px;
+}
+.shoes {
+  font-size: 20px;
+}
+.mod-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: #000419;
+}
+.shoes-link {
+  text-decoration: none;
+  font-size: 30px;
+  background: -webkit-linear-gradient(left, #ffc300 49%, blue 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mod-ball {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(26 / 20);
+}
+.mod-tatu {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+.mod-photo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: 0.3s ease;
+}
+.mod-img {
+  width: 100%;
+  border-radius: 8px;
+  /* transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: 0.3s ease;
+}
+.modall__close-btn {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  color: #050505;
+}
+.modwind.open {
+  visibility: visible;
+  opacity: 1;
+}
+.modwind.open .modall__box {
+  transform: scale(1);
+}
+
