@@ -12,8 +12,6 @@ modalBtns.forEach(function (button) {
         console.log(slideToShow);
     });
 
-  
-
 });
 
 // Запуск бібліотеки модального вікна
