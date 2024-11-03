@@ -57,6 +57,7 @@ body {
     color: #2c2c2c;
     margin-left: 32px;
     margin-bottom: 10px;
+    margin-top: 80px;
     text-transform: uppercase;
 }
 
@@ -316,7 +317,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 /* services */
@@ -694,8 +695,13 @@ body {
         -o-transition: all 0.1s ease;
         transition: all 0.5s ease;
         pointer-events: inherit;
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
-
+    .menu.active a {
+        font-size: x-large;
+        margin-bottom: 10px;
+    }
     .menu-nav {
         position: relative;
         min-height: 22px;
@@ -910,7 +916,7 @@ body {
     }
 
     .title {
-        margin-top: 0px;
+        /* margin-top: 0px; */
         margin-left: 20px;
     }
 
