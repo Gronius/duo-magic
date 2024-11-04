@@ -1563,6 +1563,7 @@ body {
 
 .page-master__descript {
     font-size: 16px;
+    line-height: 1.4;
     text-align: justify;
 }
 
