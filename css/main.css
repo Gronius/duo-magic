@@ -414,8 +414,7 @@ body {
     width: 100%;
     margin-top: 42px;
     padding-top: 26px;
-    /* padding-bottom: 26px; */
-    padding-bottom: 45px;
+    padding-bottom: 12px;
     background-color: #011739;
 }
 
@@ -438,12 +437,18 @@ body {
     line-height: 24px;
     letter-spacing: 0.5px;
     color: #ffffff;
+    margin-top: 8px;
 }
-
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 64px;
+}
 .contact-list {
     display: flex;
-    gap: 33px;
-    margin-bottom: 34px;
+    gap: 10px;
+    flex-direction: column;
 }
 
 .contact-item {
@@ -452,19 +457,12 @@ body {
 }
 
 .contact-item a {
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
     margin-left: 10px;
 }
 
-.social-text {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.5px;
-    color: #c5c5c5;
-    text-align: right;
-    margin-bottom: 8px;
-}
+
 
 /* -----Social-Media----- */
 .footer-medias {
@@ -508,7 +506,7 @@ body {
     color: #eeeff3bb;
     transition: color 0.4s;
     padding-left: 32px;
-    padding-top: 30px;
+    padding-top: 0px;
 }
 
 /* Media */
@@ -550,13 +548,6 @@ body {
     }
 }
 
-/* @media (max-width: 1050px) {
-    .item {
-        max-width: 230px;
-    width: 100%;
-    height: 82px;
-    }
-} */
 
 @media (max-width: 998px) {
     .logo-img {
@@ -770,7 +761,15 @@ body {
     .section__charity {
         padding: 0 16px;
     }
+    .footer-text {
+        font-size: 14px;
+    }
+}
 
+@media (max-width: 670px) {
+    .footer__container {
+        padding: 0 18px;
+    }
     .footer__logo {
         display: flex;
         gap: 30px;
@@ -792,15 +791,11 @@ body {
         padding-bottom: 20px;
     }
 
-    .footer-text {
-        font-size: 14px;
-    }
-
     .contact-list {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        margin-bottom: 18px;
+        margin-bottom: 22px;
     }
 
     .contact-item {
@@ -809,6 +804,7 @@ body {
 
     .contact-item a {
         font-size: 16px;
+        margin-left: 0px;
     }
 
     .contact-tel {
@@ -825,12 +821,11 @@ body {
         gap: 6px;
     }
 
-    .social-text {
-        text-align: left;
-        font-size: 10px;
-        margin-bottom: 0;
+    .social {
+      padding-top: 0;
+      gap: 0;
+      margin-bottom: 22px;
     }
-
     .social-links {
         display: flex;
         justify-content: flex-start;
@@ -838,7 +833,7 @@ body {
     }
 
     .footer-info__copyright-link {
-        padding-top: 10px;
+        padding-top: 0px;
     }
 }
 
@@ -1486,6 +1481,7 @@ body {
 
 .page-blog__descript {
     font-size: 16px;
+    line-height: 1.4;
     text-align: justify;
 }
 
