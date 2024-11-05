@@ -468,11 +468,11 @@ body {
     color: #ffffff;
     margin-left: 10px;
 }
-.network-social {
-  display: flex;
-  flex-direction: row;
+.network-social  {
+   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+
 }
 
 
