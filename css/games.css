@@ -1,5 +1,4 @@
 
-
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -9,12 +8,16 @@
   padding: 0;
 }
 /* * {
-  outline: 1px solid #d10823;
+  outline: 2px solid #d10823;
 } */
 body {
-/*  background-color: rgba(255, 255, 255, 0.801);*/
-   /* background-color: #ddd; */
-   background-color: #6ba14457;
+  width: 100%;
+  height: auto;
+  background-image: url(../img/gra/mandalas-24a.jpg); 
+  /* background-image: url(../img/gra/christmas-24a.jpg); */
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: cover;
 }
 
 /*components*/
@@ -25,53 +28,60 @@ body {
   font-size: 25px;
   font-weight: 700;
   margin: 10px 0;
+  color: #fff;
+  color: #000;
   text-align: center;
 }
 
 .game-wrapper {
-  display: flex;
-  background-color: #ddd;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
 }
-
 .sidebar {
   display: flex;
-  justify-content: space-evenly;
-  margin: 10px auto;
+  flex-direction: column;
+  margin: 20px auto;
   max-width: 300px;
+  background-color: rgba(247, 246, 235, 0.781);
+  border-radius: 8px; 
 }
-
+.count {
+  display: flex;
+  justify-content: space-around;
+}
 .chooser {
+  margin: 4px 0;
   border-radius: 8px;
 }
-
 .statistic {
   margin: 10px 0;
   font-size: 18px;
   font-weight: 500;
 }
-
 .playground {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
   width: 700px;
-  background-color: #f800ff3b; 
-    /* background-color: #fff; */
-    background-color: #0051ff66; 
-
+  padding: 12px 0;
 }
-
 .big-playground {
   width: 900px;
+  max-width: 100%;
+  height: auto;
 }
-
 .card {
   border: 1px solid #ddd;
   border-radius: 8px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
-  background-image: url(../pics/33.jpg);
+  /* background-image: url(../pics/33.jpg); */
+  background-image: url(../pics/logo-2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -165,7 +175,6 @@ body {
 
   .big-playground {
     width: 700px;
-    margin: 0;
   }
 
   .card {
@@ -272,21 +281,3 @@ body {
   }
 }
 
-/* @media screen and (max-width: 320px) {
-  .card {
-    height: 65px;
-    margin: 5px;
-    width: 65px;
-  }
-
-  .card-for-6x6 {
-    height: 50px;
-    width: 50px;
-    margin: 0;
-  }
-
-  .card-for-8x8 {
-    border: 1px solid #ddd;
-  }
-    
-} */
