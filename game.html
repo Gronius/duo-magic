@@ -16,22 +16,23 @@
 </head>
 <body>
     
-    <main class='game-wrapper'>
-    
-        <aside class='sidebar'> 
-            <h1 class='title'>Memory<h1>
-                <div class="count">
-            <select class='chooser'>
-                <option value="4">4x4</option>
-                <option value="6">6x6</option>
-                <option value="8">8x8</option>
-            </select>
-            <p class='statistic'>Timer: <span class='timer'></span></p>
-            <p class='statistic'>Score: <span class='scores'>0</span></p>
-                </div>
-            
-        </aside>
-        <section class='playground'></section>
+        <main class='game-wrapper'>
+        <div class="game__box">
+            <aside class='sidebar'> 
+              <button class="game-close-btn" onclick="location.href='index.html'"><img src="./img/kopka.png" alt /></button>
+                <h1 class='title'>Memory<h1>
+                  <div class="count">
+                    <select class='chooser'>
+                        <option value="4">4x4</option>
+                        <option value="6">6x6</option>
+                        <option value="8">8x8</option>
+                    </select>
+                    <p class='statistic'>Timer: <span class='timer'></span></p>
+                    <p class='statistic'>Score: <span class='scores'>0</span></p>
+                  </div>
+            </aside>
+            <section class='playground'></section>
+          </div>    
     </main>
     <script src="./js/game.js"></script>
 </body>

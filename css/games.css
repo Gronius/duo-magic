@@ -1,7 +1,6 @@
-
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 20px;
   margin: 0;
@@ -13,33 +12,41 @@
 body {
   width: 100%;
   height: auto;
-  background-image: url(../img/gra/mandalas-24a.jpg); 
-  /* background-image: url(../img/gra/christmas-24a.jpg); */
-  /* background-repeat: no-repeat; */
-  background-position: center;
-  background-size: cover;
+  background-color: #d6acee;
 }
 
 /*components*/
 
 .title {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: italic;
   font-size: 25px;
   font-weight: 700;
-  margin: 10px 0;
-  color: #fff;
   color: #000;
   text-align: center;
 }
 
 .game-wrapper {
+  max-width: 1280px;
   width: 100%;
   height: auto;
   max-height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; 
+}
+.game__box {
+  margin: 0 auto;
+}
+.game-close-btn {
+  width: 22px;
+  height: 22px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+  margin-left: auto;
+  top: 10px;
+  right: 10px;
+  border: none;
 }
 .sidebar {
   display: flex;
@@ -47,7 +54,7 @@ body {
   margin: 20px auto;
   max-width: 300px;
   background-color: rgba(247, 246, 235, 0.781);
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 .count {
   display: flex;
@@ -79,7 +86,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 8px;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   /* background-image: url(../pics/33.jpg); */
   background-image: url(../pics/logo-2.png);
   background-repeat: no-repeat;
@@ -144,7 +151,7 @@ body {
 }
 
 .final-text {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 25px;
   font-weight: 500;
 }
@@ -156,6 +163,11 @@ body {
 .new-game-btn:active {
   box-shadow: none;
 }
+@media screen and (max-width: 1920px) {
+  .game-wrapper {
+    margin: 0 auto;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .game-wrapper {
@@ -164,8 +176,7 @@ body {
   }
 
   .sidebar {
-    align-self: center;
-    text-align: center;
+    margin: 0 auto;
   }
 
   .playground {
@@ -222,7 +233,13 @@ body {
     width: 90px;
   }
 }
-
+@media screen and (max-width: 512px) {
+    .card {
+    height: 120px;
+    width: 120px;
+    margin: 2px;
+  }
+}
 @media screen and (max-width: 414px) {
   .playground {
     width: 100vw;
@@ -280,4 +297,3 @@ body {
     border: 1px solid #ddd;
   }
 }
-
